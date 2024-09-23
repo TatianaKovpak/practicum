@@ -1,0 +1,96 @@
+.options {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 20;
+	border-radius: 8px;
+	background: var(--light-primary);
+	box-shadow: 0px 4px 24px 0px rgba(0, 77, 95, 0.24);
+	margin-top: 4px;
+	padding: 8px 4px 8px 0;
+}
+
+.option {
+	padding: 8px 0px 8px 16px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	justify-content: space-between;
+
+	&:hover {
+		background: var(--light-secondary);
+		cursor: pointer;
+	}
+}
+
+.optionText {
+	margin: 0;
+	color: var(--dark-secondary);
+	font: var(--font-s-medium);
+}
+
+.singleCheckIcon {
+	margin-right: 12px;
+}
+
+.select {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.label {
+	color: var(--color-text-secondary-light);
+	font: var(--font-xxxs-medium);
+	position: absolute;
+	left: 16px;
+	top: 6px;
+	z-index: 2;
+}
+
+.selection {
+	position: relative;
+	border-radius: 6px;
+	background: var(--light-secondary);
+	z-index: 1;
+	padding: 6px 52px 6px 16px;
+	min-height: 48px;
+	display: flex;
+	align-items: flex-end;
+
+	&:hover {
+		background: var(--color-bg-input-hover);
+		cursor: pointer;
+	}
+
+	&:focus {
+		background: var(--light-primary);
+		border: 1px solid var(--color-text-nav-secondary);
+		cursor: pointer;
+	}
+}
+
+.placeholder {
+	margin: 0;
+	color: var(--color-text-secondary-light);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font: var(--font-s-medium);
+	align-self: center;
+}
+
+.value {
+	position: relative;
+	display: inline-block;
+	color: var(--dark-primary);
+	font: var(--font-s-medium);
+	padding: 0;
+}
+
+.arrow {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}

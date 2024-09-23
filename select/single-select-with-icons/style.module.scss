@@ -1,0 +1,112 @@
+.select {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.selection {
+	position: relative;
+	border-radius: 6px;
+	background: var(--light-secondary);
+	z-index: 1;
+	padding: 6px 52px 6px 16px;
+	min-height: 48px;
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		background: var(--color-bg-input-hover);
+		cursor: pointer;
+	}
+
+	&:focus {
+		background: var(--light-primary);
+		border: 1px solid var(--color-text-nav-secondary);
+		cursor: pointer;
+	}
+}
+
+.placeholder {
+	margin: 0;
+	color: var(--color-text-secondary-light);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font: var(--font-s-medium);
+	align-self: center;
+}
+
+.value {
+	position: relative;
+	color: var(--dark-primary);
+	font: var(--font-s-medium);
+	padding: 0;
+	display: flex;
+}
+
+.optionImg {
+	margin-right: 4px;
+
+	&:hover {
+		opacity: 0.6;
+		cursor: pointer;
+	}
+}
+
+.arrow {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.options {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 20;
+	border-radius: 8px;
+	background: var(--light-primary);
+	box-shadow: 0px 4px 24px 0px rgba(0, 77, 95, 0.24);
+	margin-top: 4px;
+}
+
+.option {
+	padding: 8px 0px 8px 16px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	width: 100%;
+	justify-content: space-between;
+
+	&:hover {
+		background: var(--light-secondary);
+	}
+}
+
+.optionImgTextWrap {
+	display: flex;
+}
+
+.optionImg {
+	margin-right: 4px;
+
+	&:hover {
+		opacity: 0.6;
+		cursor: pointer;
+	}
+}
+
+.optionImgGrayScale {
+	filter: grayscale(100%);
+}
+
+.optionText {
+	margin: 0;
+	color: var(--dark-secondary);
+	font: var(--font-s-medium);
+}
+
+.singleCheckIcon {
+	margin-right: 12px;
+}
