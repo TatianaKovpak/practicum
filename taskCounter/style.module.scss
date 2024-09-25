@@ -1,0 +1,49 @@
+.wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+
+// direction
+.rowWrap {
+	flex-direction: row;
+	align-items: center;
+	gap: 16px;
+}
+
+.rowReversWrap {
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: 16px;
+}
+
+.columnWrap {
+	flex-direction: column;
+	gap: 4px;
+}
+
+.text {
+	font: var(--font-xxxs-bold);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: var(--dark-primary);
+	margin: 0;
+}
+
+.number {
+	font-family: var(--font-family-numbers);
+	font-size: var(--font-size-xxxl);
+	line-height: var(--font-line-small-3xl);
+	font-weight: var(--font-weigth-medium);
+	color: var(--accent);
+	margin: 0;
+}
+
+.color-accent {
+	color: var(--accent);
+}
+
+.color-link {
+	color: var(--color-text-link);
+}
